@@ -1,0 +1,8 @@
+{
+  "name": "UI Commands",
+  "id": "1148384556105982099",
+  "api": "1.0.0",
+  "main": "./src/getInput.js",
+  "editorType": ["figma", "figjam"],
+  "ui": "./src/test.html"
+}

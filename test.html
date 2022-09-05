@@ -1,0 +1,16 @@
+<h2>Lui</h2>
+<p>Command: <input id="command" type="text" placeholder="Type a command" /></p>
+<button id="create">Create</button>
+<button id="cancel">Cancel</button>
+<script>
+  document.getElementById("create").onclick = () => {
+    // console.log("clicked");
+    const textbox = document.getElementById("command");
+    const command = textbox.value;
+    parent.postMessage({ pluginMessage: { type: "create", command } }, "*");
+  };
+
+  document.getElementById("cancel").onclick = () => {
+    parent.postMessage({ pluginMessage: { type: "cancel" } }, "*");
+  };
+</script>
